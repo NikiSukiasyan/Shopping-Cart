@@ -40,6 +40,9 @@ body {
   color: #fff;
   top: 50px;
   left: 323px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item-count {
   width: 390px;
@@ -198,5 +201,8 @@ body {
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
   font-family: "RaleWay";
+  cursor: pointer;
+}
+button {
   cursor: pointer;
 }

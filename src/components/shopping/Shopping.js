@@ -3,14 +3,29 @@ import ShoppingBag from "../../images/shopping-bag.svg";
 import Nike from "../../images/Nike.png";
 import HM from "../../images/HM.png";
 import Gucci from "../../images/Gucci.png";
+import { useState } from "react";
 
 function Shopping() {
+  const [items, setItems] = useState([]);
+
+  const addToCart = (price) => {
+    items.push(price);
+    setItems([...items]);
+  };
+
+  const cartCount = items.length;
+
+  const Total = 0;
+  const SumOfPrice = items
+    .reduce((value, currentValue) => value + currentValue, Total)
+    .toFixed(2);
+
   return (
     <>
       <div className="shopping-container">
         <h1>Shopping Cart</h1>
         <img src={ShoppingBag} alt="Shopping Bag" className="bag-image" />
-        <button className="cart-items">3</button>
+        <button className="cart-items">{cartCount}</button>
         <div className="item-count">
           <span>3 Items</span>
         </div>
@@ -22,7 +37,9 @@ function Shopping() {
             <span>8.5</span>
           </div>
           <p className="price">$239,55</p>
-          <button className="price-btn">Add to cart</button>
+          <button className="price-btn" onClick={() => addToCart(239.55)}>
+            Add to cart
+          </button>
           <div className="after"></div>
         </div>
         <div className="hm">
@@ -33,7 +50,9 @@ function Shopping() {
             <span>S</span>
           </div>
           <p className="price">$14,99</p>
-          <button className="price-btn">Add to cart</button>
+          <button className="price-btn" onClick={() => addToCart(14.99)}>
+            Add to cart
+          </button>
           <div className="after"></div>
         </div>
         <div className="gucci">
@@ -43,13 +62,15 @@ function Shopping() {
             <span>CG Marmont</span>
           </div>
           <p className="price">$1850,00</p>
-          <button className="gucci-btn">Add to cart</button>
+          <button className="gucci-btn" onClick={() => addToCart(1850)}>
+            Add to cart
+          </button>
           <div className="after-gucci"></div>
         </div>
         <div className="total">
           <div className="total-container">
             <p className="total-text">Total</p>
-            <span className="total-amount">$2104,54</span>
+            <span className="total-amount">{SumOfPrice}</span>
           </div>
           <button className="checkout">Checkout</button>
         </div>
