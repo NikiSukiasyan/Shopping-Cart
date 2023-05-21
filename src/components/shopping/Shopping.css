@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "RaleWay";
+  src: url(../../fonts/Raleway-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+  margin: auto;
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+}
+.shopping-container {
+  width: 390px;
+  height: 844px;
+  background-color: #fff;
+  margin-top: 30px;
+  position: relative;
+}
+.shopping-container h1 {
+  font-size: 24px;
+  font-family: "RaleWay";
+  line-height: 24px;
+  color: #000000;
+  margin-left: 22px;
+  padding-top: 63px;
+}
+.bag-image {
+  position: absolute;
+  top: 58px;
+  left: 332px;
+}
+.cart-items {
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+  position: absolute;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  top: 50px;
+  left: 323px;
+}
+.item-count {
+  width: 390px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.03);
+  margin-top: 54px;
+  display: flex;
+}
+.item-count span {
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+.nike {
+  display: flex;
+  position: relative;
+}
+.nike img {
+  margin-top: 32px;
+  margin-left: 24px;
+}
+.models {
+  margin-left: -193px;
+  margin-top: 40px;
+}
+.shoes {
+  font-family: "RaleWay";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgba(57, 57, 57, 1);
+}
+.shoes-category {
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(57, 57, 57, 1);
+  font-family: "RaleWay";
+}
+.models span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(57, 57, 57, 1);
+}
+.price {
+  position: absolute;
+  top: 44px;
+  left: 218px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+}
+.price-btn {
+  position: absolute;
+  top: 79px;
+  left: 276px;
+  width: 106px;
+  height: 20px;
+  border-radius: 48px;
+  background-color: rgba(217, 65, 65, 1);
+  border: 0px;
+  color: #fff;
+  font-family: "RaleWay";
+  font-size: 13px;
+  font-weight: 500;
+}
+.after {
+  width: 390px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 125px;
+}
+.hm img {
+  margin-top: 33px;
+  margin-left: 24px;
+}
+.hm span {
+  font-family: "RaleWay";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(57, 57, 57, 1);
+}
+.hm-models {
+  margin-left: 120px;
+  margin-top: -72px;
+}
+.hm {
+  position: relative;
+}
+.gucci img {
+  margin-top: 44px;
+  margin-left: 24px;
+}
+.gucci-models {
+  margin-left: 120px;
+  margin-top: -69px;
+}
+.gucci {
+  position: relative;
+}
+.after-gucci {
+  position: absolute;
+  width: 390px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  top: 136px;
+}
+.gucci-btn {
+  position: absolute;
+  top: 98px;
+  left: 276px;
+  width: 106px;
+  height: 20px;
+  border-radius: 48px;
+  background-color: rgba(217, 65, 65, 1);
+  border: 0px;
+  color: #fff;
+  font-family: "RaleWay";
+  font-size: 13px;
+  font-weight: 500;
+}
+.total {
+  margin-top: 135px;
+  width: 390px;
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.total-container {
+  display: flex;
+  gap: 228px;
+  padding-top: 25px;
+}
+.total-text {
+  font-family: "RaleWay";
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(57, 57, 57, 1);
+}
+.total-amount {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgba(57, 57, 57, 1);
+}
+.checkout {
+  margin-top: 111px;
+  margin-left: 76px;
+  width: 234px;
+  height: 52px;
+  border: 0px;
+  border-radius: 48px;
+  background-color: rgba(57, 57, 57, 1);
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  font-family: "RaleWay";
+  cursor: pointer;
+}
